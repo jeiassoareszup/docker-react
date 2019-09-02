@@ -5,5 +5,5 @@ services:
 before_install:
   - docker build . -t jeias/docker-reactmyi -f Dockerfile.dev
 
-  script:
+script:
   - docker run -e CI=true jeias/docker-reactmyi npm run test
